@@ -842,7 +842,7 @@ const getNormalConfigs = async (env, hostName, client) => {
     ];
 
     Addresses.forEach((addr) => {
-        let remark = `💦 BPB - ${addr}`;
+        let remark = `Amiro - ${addr}`;
         remark = remark.length <= 30 ? remark : `${remark.slice(0,29)}...`;
 
         vlessWsTls += `vless://${userID}@${addr}:443?encryption=none&security=tls&type=ws&host=${
@@ -2011,7 +2011,7 @@ const renderLoginPage = async () => {
     </head>
     <body>
         <div class="container">
-            <h1>BPB Panel <span style="font-size: smaller;">2.3</span> 💦</h1>
+            <h1>Amiro Panel <span style="font-size: smaller;">2.3</span></h1>
             <div class="form-container">
                 <h2>User Login</h2>
                 <form id="loginForm">
