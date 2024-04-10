@@ -1006,7 +1006,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
         let fragConfig = structuredClone(xrayConfigTemp);
         let outbound = structuredClone(xrayOutboundTemp);
-        let remark = `💦 BPB - ${addr}`;
+        let remark = `Amiro - ${addr}`;
         delete outbound.mux;
         delete outbound.streamSettings.grpcSettings;
         delete outbound.streamSettings.realitySettings;
@@ -1070,7 +1070,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
 
     let bestPing = structuredClone(xrayConfigTemp);
-    bestPing.remarks = '💦 BPB Frag - Best Ping 💥';
+    bestPing.remarks = 'Amiro - Best Ping 💥';
     bestPing.dns.servers[0] = remoteDNS;
     bestPing.dns.servers[1].address = localDNS;
     bestPing.outbounds[2].settings.fragment.length = `${lengthMin}-${lengthMax}`;
@@ -1509,7 +1509,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 	</head>
 	
 	<body>
-		<h1 style="text-align: center; color: #2980b9">BPB Panel <span style="font-size: smaller;">2.3</span> 💦</h1>
+		<h1 style="text-align: center; color: #2980b9">Amiro Panel <span style="font-size: smaller;">2.3</span></h1>
 		<div class="form-container">
             <h2>FRAGMENT SETTINGS ⚙️</h2>
 			<form id="configForm">
